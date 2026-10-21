@@ -1,0 +1,22 @@
+{
+  "template_only": true,
+  "instruction": "Fill privately for the authorized campaign. No real accounts, schedules or evidence belong in the public skill package.",
+  "campaign": {
+    "name": "",
+    "authorization_summary": "",
+    "mode": "prepare_only",
+    "timezone": "",
+    "resolved_start_dates": {},
+    "cadence": "one project per local day per selected destination",
+    "defaults": {"meta_time": "20:00", "linkedin_time": "10:30"}
+  },
+  "destinations": [],
+  "projects": [],
+  "posts": [],
+  "meta_rules": [],
+  "verification_guide": {
+    "post_fields": ["project_key", "destination_key", "repo_url", "exact_keyword", "caption_path", "image_path", "local_datetime_with_offset", "timezone", "status", "native_reference", "verified_at", "evidence_path"],
+    "post_statuses": ["planned", "draft", "submitted_unconfirmed", "scheduled_verified", "published_verified", "unavailable"],
+    "rule_fields": ["project_key", "exact_keyword", "trigger_semantics", "scope", "messenger_enabled", "instagram_enabled", "repo_url", "public_reply", "private_message", "saved_settings_verified_at", "delivery_test_status", "evidence_path"]
+  }
+}

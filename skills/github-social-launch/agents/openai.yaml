@@ -1,0 +1,6 @@
+interface:
+  display_name: "GitHub Social Launch"
+  short_description: "Schedule repo launches across Meta and LinkedIn"
+  default_prompt: "Use $github-social-launch to prepare these GitHub announcements, reconcile existing queues, and complete the authorized four-channel schedule and Meta keyword replies with saved-state verification."
+policy:
+  allow_implicit_invocation: true
