@@ -8,15 +8,103 @@
     "timezone": "",
     "resolved_start_dates": {},
     "cadence": "one project per local day per selected destination",
-    "defaults": {"meta_time": "20:00", "linkedin_time": "10:30"}
+    "defaults": {
+      "meta_time": "20:00",
+      "linkedin_time": "10:30"
+    }
   },
   "destinations": [],
   "projects": [],
   "posts": [],
   "meta_rules": [],
   "verification_guide": {
-    "post_fields": ["project_key", "destination_key", "repo_url", "exact_keyword", "caption_path", "image_path", "local_datetime_with_offset", "timezone", "status", "native_reference", "verified_at", "evidence_path"],
-    "post_statuses": ["planned", "draft", "submitted_unconfirmed", "scheduled_verified", "published_verified", "unavailable"],
-    "rule_fields": ["project_key", "exact_keyword", "trigger_semantics", "scope", "messenger_enabled", "instagram_enabled", "repo_url", "public_reply", "private_message", "saved_settings_verified_at", "delivery_test_status", "evidence_path"]
+    "post_fields": [
+      "project_key",
+      "destination_key",
+      "repo_url",
+      "exact_keyword",
+      "caption_path",
+      "image_path",
+      "local_datetime_with_offset",
+      "timezone",
+      "status",
+      "native_reference",
+      "verified_at",
+      "evidence_path"
+    ],
+    "post_statuses": [
+      "planned",
+      "draft",
+      "submitted_unconfirmed",
+      "scheduled_verified",
+      "published_verified",
+      "unavailable"
+    ],
+    "rule_fields": [
+      "provider",
+      "connection_state",
+      "workflow_reference",
+      "coverage_cell",
+      "skip_reason",
+      "native_overlap_resolution",
+      "ordered_steps",
+      "follow_requirement",
+      "project_key",
+      "trigger_type",
+      "exact_keyword",
+      "accepted_keywords",
+      "alias_review_rationale",
+      "keyword_limit_by_trigger",
+      "uncovered_aliases",
+      "trigger_semantics",
+      "scope",
+      "messenger_enabled",
+      "instagram_enabled",
+      "repo_url",
+      "public_reply",
+      "private_message",
+      "incoming_message_reply",
+      "inactivity_requirement",
+      "cooldown_or_repeat_limits",
+      "status",
+      "saved_settings_verified_at",
+      "delivery_test_status",
+      "evidence_path"
+    ],
+    "rule_trigger_types": [
+      "comment_to_message",
+      "incoming_message_keyword"
+    ],
+    "required_rule_coverage_per_project": [
+      "facebook_comment",
+      "instagram_comment",
+      "messenger_incoming_message",
+      "instagram_incoming_message"
+    ],
+    "keyword_field_meaning": {
+      "exact_keyword": "Canonical public phrase, unchanged in approved artwork/captions.",
+      "accepted_keywords": "Complete saved canonical-plus-alias list; verify identical coverage in both trigger types and all four channel cells.",
+      "alias_review_rationale": "Applicable hamza/no-hamza and other common spelling variants, collision review, or why no variant applies.",
+      "keyword_limit_by_trigger": "Limits observed in the current SuperMod instance; do not inherit an old native Meta limit.",
+      "uncovered_aliases": "Useful variants excluded by an observed platform limit; report instead of silently omitting."
+    },
+    "rule_statuses": [
+      "planned",
+      "draft",
+      "saved_verified",
+      "skipped_not_connected",
+      "blocked_not_ready",
+      "submitted_unconfirmed"
+    ],
+    "rule_providers": [
+      "SuperMod"
+    ],
+    "delivery_test_statuses": [
+      "not_authorized",
+      "not_tested",
+      "passed",
+      "failed",
+      "inconclusive"
+    ]
   }
 }

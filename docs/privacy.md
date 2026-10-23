@@ -14,12 +14,14 @@ Keep your installed `references/local-profile.md`, filled campaign ledger, platf
 
 Use the signed-in browser or an authorized connector through the host's supported tool. Do not export cookies, credentials or tokens to enable automation. Verify the actual actor/destination rather than inferring it from a remembered ID or someone else's example.
 
+SuperMod is an optional existing connection, not part of this public package. Keep its instance/deployment URLs, linked account IDs, workflow references, connection status, logs and recipients private. Never publish API keys, Meta access tokens, app secrets or webhook verification secrets. Use generic placeholders in shared templates; do not include a private SuperMod repository URL or assume its source will be published. The skill uses the existing authorized connection without exporting browser credentials.
+
 ## What data moves when used
 
 - The assistant's model processes repository material and any working evidence read into its context under the host/provider's settings.
 - Image services receive production prompts/references. Give them approved public visuals, not private dashboards or inboxes.
 - Scheduling uploads the chosen copy and images to the selected social account/platform, where they may publish later automatically.
-- Enabling a requested comment rule configures future platform replies/messages to people who trigger that rule, within the saved channel/scope. Verify those effects before saving.
+- Enabling requested SuperMod comment and incoming-message workflows configures future platform replies/messages to people who trigger that rule, within the saved channel/scope. Verify those effects before saving.
 - A cross-chat handoff sends its text and referenced artifact details to that chat only when authorized. It does not authorize unrelated replies, DMs or other account actions.
 
 The skill does not claim offline-only processing. Preparing files alone does not post content or send messages; actual scheduling and rule changes require the user's relevant authority and tool access.

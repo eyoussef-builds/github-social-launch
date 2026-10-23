@@ -26,6 +26,6 @@ Record each transition after it happens: planned → draft → submitted/unconfi
 These examples are invented; they are not the creator's actual schedule.
 
 - Two repos, four destinations. A LinkedIn profile already has a different post on the requested first day. Preserve it. If the window is flexible, start the LinkedIn pair the next free day while the Meta pair may start on the requested day; verify all 8 destination entries separately.
-- Facebook has Repo A scheduled, Instagram is missing. Schedule Instagram only. Reopen the shared Meta keyword rule and enable/verify the Instagram channel without disabling Messenger. The existing Facebook post and rule are retained.
+- Facebook has Repo A scheduled, Instagram is missing. Schedule Instagram only. If SuperMod is connected and Instagram is ready, reconcile and verify its Instagram comment and incoming-message triggers without duplicating Facebook coverage; otherwise record the Instagram automation gap. The existing Facebook post is retained.
 - The Schedule action times out. A queue entry with the right repo, image and time exists. Mark that entry verified instead of clicking Schedule again.
-- The native rule looks enabled, but no authorized real comment was sent. Report “saved rule enabled and verified”; do not claim actual message receipt was tested.
+- The SuperMod workflow looks enabled, but no authorized real comment was sent. Report “saved rule enabled and verified”; do not claim actual message receipt was tested.

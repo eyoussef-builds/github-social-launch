@@ -13,7 +13,7 @@ Your project is on GitHub. Now you want to tell people about it: write posts, at
 1. **Read the project:** establish its real features, requirements and license.
 2. **Prepare the posts and artwork:** keep the wording, brand and keyword consistent.
 3. **Check existing queues, then schedule:** preserve existing posts and add only missing work.
-4. **Verify what saved:** inspect each destination and the requested native Meta message rules.
+4. **Verify what saved:** inspect each destination and the requested SuperMod comment and incoming-message workflows, when connected.
 
 <p align="center"><img src="docs/images/how-it-works-en.svg" alt="Read the repository, prepare the pack, reconcile and schedule, verify saved work" width="100%"></p>
 
@@ -28,7 +28,7 @@ A **skill** is a folder of instructions for your AI assistant. This is not a sta
 | 🎨 Designs | Reuses suitable approved artwork or creates requested images in your brand. |
 | 📅 Four destination roles | Facebook Page, connected Instagram, LinkedIn personal profile and LinkedIn organization Page. |
 | 🔄 Existing schedules | Checks live queues, preserves other content and adds missing channels without replaying completed work. |
-| 💬 Keyword delivery | Configures authorized native Meta comment-to-message rules where available, checking both channels. |
+| 💬 Keyword delivery | Uses connected SuperMod for comment and incoming-message keywords on Facebook/Messenger and Instagram; skips automation when disconnected. |
 | ✅ Verification | Reopens saved queues/rules and reports the actual state for every destination. |
 
 The preferred cadence is **one project per day per selected destination**, Meta around **20:00** and LinkedIn around **10:30**, in **your timezone**. Your requested dates and brand take precedence. These are workflow defaults, not claims about the best engagement times.
@@ -93,8 +93,9 @@ After reviewing, you can say:
 ```text
 Approved. Schedule these announcements on the four destinations we identified,
 one project per day: Meta at 20:00 and LinkedIn at 10:30 in my timezone.
-Preserve existing posts. Set up the matching native Facebook/Instagram
-comment-to-message rules where available, then verify every saved post and rule.
+Preserve existing posts. For every repo, use connected SuperMod for comment and
+incoming-message keyword rules on Facebook/Messenger and Instagram. If SuperMod
+is not connected, skip automation and report it. Verify every saved post and workflow.
 ```
 
 A direct request to schedule already supplies the relevant authorization; routine steps do not need repeated approval. Preparing copy alone does not authorize publication or messaging. “Always include Instagram and the LinkedIn Page” can save a preference for future requested campaigns, not start indefinite posting.
@@ -103,7 +104,9 @@ A direct request to schedule already supplies the relevant authorization; routin
 
 It reuses correct existing work, adds only missing destinations, checks the final actor/caption/image/date/time and submits through native scheduling. If a save times out, it checks the queue before retrying to avoid duplicates.
 
-For requested Meta rules, it distinguishes comment triggers from incoming-message keyword replies, confirms the exact keyword/link, checks Messenger and Instagram separately, then reopens the saved rule. Feature availability and scope depend on the actual account/UI. No LinkedIn DM automation is assumed.
+For each repo, it uses an existing authorized SuperMod connection for four cells: Facebook comment, Instagram comment, Messenger incoming message and Instagram incoming message. It checks canonical keywords plus reviewed Arabic spelling aliases across both triggers, confirms the exact link and reopens saved workflows. Without SuperMod, it skips automation, keeps scheduling authorized posts and reports the gap with manual reply copy. Partial connections produce partial coverage. It creates no native Meta keyword fallback. No LinkedIn DM automation is assumed.
+
+**SuperMod is optional and separate.** It is not bundled with this MIT skill, and this repository makes no claim that SuperMod is open source or publicly available. Installing the skill does not connect, deploy or publish SuperMod. Keep your instance URL and account bindings in a private installed profile; enter secrets only in the service’s supported private controls.
 
 ### 5. Read the result
 
@@ -144,7 +147,7 @@ No. It schedules the finite list you requested using native platform queues. It 
 
 <details><summary><b>Does every account support keyword DMs?</b></summary>
 
-No guarantee. It checks the current Meta template, trigger scope and channel support. If unavailable, it prepares a manual fallback and reports the gap. LinkedIn replies remain manual unless a supported authorized mechanism is actually verified.
+No. Keyword automation requires an already connected, ready SuperMod instance for the intended accounts. If absent, automation is explicitly skipped; if only one channel is ready, only that coverage is configured. Existing native rules are preserved until a verified replacement is ready, and unrelated rules are left alone. LinkedIn replies remain manual unless a supported authorized mechanism is actually verified.
 
 </details>
 
@@ -162,7 +165,7 @@ Yes. Defaults are Egyptian Arabic copy, cream/yellow/ink graphics and yellow hea
 
 <details><summary><b>How do I update or remove it?</b></summary>
 
-Compare a new download with your installed folder and preserve changes and any private local profile. Remove only the installed skill folder to uninstall it. Removing the skill does not cancel existing native scheduled posts or message rules. See [troubleshooting](docs/agent-installation.md#troubleshooting).
+Compare a new download with your installed folder and preserve changes and any private local profile. Remove only the installed skill folder to uninstall it. Removing the skill does not cancel existing scheduled posts, SuperMod workflows or native message rules. See [troubleshooting](docs/agent-installation.md#troubleshooting).
 
 </details>
 
@@ -181,7 +184,7 @@ Compare a new download with your installed folder and preserve changes and any p
 ```text
 skills/github-social-launch/
   SKILL.md       Campaign workflow and authorization boundaries
-  references/    Content, calendar, native scheduling, Meta rules and verification
+  references/    Content, calendar, native scheduling, SuperMod rules and verification
   assets/        Blank private profile and campaign-ledger templates
   agents/        Codex metadata
 docs/            Bilingual installation/privacy guides and public artwork

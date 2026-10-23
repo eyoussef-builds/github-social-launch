@@ -18,11 +18,11 @@ Exclude private information, credentials, local/device details and unrelated wor
 
 Use the user's exact keyword, preserving spelling and spaces. If none is given, choose a short, memorable Arabic name for the tool, **1–3 words**, and tell the user which keyword was chosen in one short line outside the copy blocks. Reuse the exact keyword in Facebook, LinkedIn, promo artwork and the delivery plan. Never copy ScreenLocalizer's keyword into an unrelated project.
 
-Facebook and LinkedIn contain no repository link or other URL. Their CTA is:
+When keyword delivery is established, Facebook and LinkedIn keep the repository URL in the reply rather than the caption. Their default CTA is:
 
 `اكتب "<الكلمة>" في كومنت وهبعتلك الرابط`
 
-The Facebook version adds `👇` as specified below. SHORT and REPLY include the exact repository URL. A drafted comment CTA does not establish that automated delivery exists, and does not authorize posting, replying, sending DMs or configuring automation. Record any delivery setup gap privately without inserting it into promotional artwork.
+The Facebook version adds `👇` as specified below. SHORT and REPLY include the exact repository URL. A drafted comment CTA does not establish that automated delivery exists, and does not authorize posting, replying, sending DMs or configuring automation. Before scheduling, reconcile this CTA with actual delivery readiness: if SuperMod is disconnected and no manual delivery plan is agreed, use a truthful manual or direct-link CTA rather than promising automatic delivery. Keep operational diagnostics out of artwork.
 
 ## Voice across all versions
 
@@ -53,7 +53,7 @@ Follow this order, omitting optional sections that have no factual basis:
 جرّبوها وقولولي رأيكم، ولو عجبتكم شاركوا البوست مع أصحابكم 💛
 ```
 
-No links in this block. Keep the tone like talking to friends.
+Keep links in the reply when delivery is established; the disconnected/manual fallback above takes precedence. Keep the tone like talking to friends.
 
 ## LINKEDIN
 
@@ -69,7 +69,7 @@ Follow this order:
 6. The exact comment-keyword CTA, then one warm invitation for feedback or conversations.
 7. **3–5 relevant hashtags**.
 
-At most **2 decorative emojis** in the entire LinkedIn post; the required `▪️` list markers are bullets, not part of that allowance. No URLs. Meet the word range through useful evidence-backed explanation, not fabricated details or repetitive filler.
+At most **2 decorative emojis** in the entire LinkedIn post; the required `▪️` list markers are bullets, not part of that allowance. Keep URLs in the reply when delivery is established, with the disconnected/manual fallback above taking precedence. Meet the word range through useful evidence-backed explanation, not fabricated details or repetitive filler.
 
 ## REPLY and final delivery
 

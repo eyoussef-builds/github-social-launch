@@ -1,25 +1,52 @@
-# Meta comment-to-message delivery
+# SuperMod comment and incoming-message keyword delivery
 
-Use only for an authorized campaign that includes comment-triggered replies/messages. A repository publication or a request for copy alone is not message-automation permission. The available native template and channel support depend on the current account/UI.
+For every new repo in a campaign authorized for keyword delivery, use an already connected **SuperMod** instance for both triggers on Facebook/Messenger and Instagram. Current instructions or saved standing authorization may cover this work; repository publication or copy preparation alone does not. Native platform queues still handle post scheduling.
 
-## Match the right kind of trigger
+## Connection gate and optional availability
 
-In the intended Page's Inbox → Automations/current equivalent, inspect existing rules before creating another. Look for the native **Comment to message** template when available. It reacts to comments on the scope shown by that builder. An incoming-message custom-keyword rule, Instant reply greeting or Away message is a different trigger; do not change one to simulate the requested comment rule.
+Find the user's existing SuperMod connection through available authorized tools, their chosen signed-in browser or private installed `references/local-profile.md`. Inspect the current instance and verify the intended linked Facebook Page/Instagram identity, connection health and required channel/trigger readiness. A saved URL, old ledger or generic connected badge alone does not prove current readiness. Use only controls/API capabilities actually exposed by that instance; do not invent endpoints or extract tokens from the browser.
 
-Preserve the exact Arabic keyword or phrase in artwork, captions and rule. Inspect whether the current UI describes contains/exact/hashtag matching and whether it scopes specific posts or broader Page content. Do not assume a matching behavior or post scope from another account. Check for overlapping keywords/rules; keep one intentional mapping from that keyword to its correct repository. A broad account-wide scope needs to be within the user's intended campaign behavior; resolve a material scope expansion before saving it.
+SuperMod may remain private. This skill does not include it, require open-source publication, promise public access or supply a creator's instance URL. Do not fetch a private source repo, install/deploy a service, add billing or request new account permissions just to satisfy a launch.
 
-## Prepare messages
+- No configured/accessible authorized instance: record every affected cell as `skipped_not_connected` with reason **SuperMod not connected**. Continue authorized post scheduling and provide manual reply copy. Do not substitute native Meta keyword automations or another service.
+- Partially connected or unhealthy channels: complete only the ready cells; mark the rest `skipped_not_connected` or `blocked_not_ready` with the observed reason. Do not claim four-cell coverage.
+- Before scheduling copy/artwork with a keyword-delivery promise, check whether automation is ready or a manual reply plan is agreed. When it is skipped, use truthful manual wording or a direct-link CTA appropriate to the destination; report any material approved-copy change. Skipping automation does not cancel the authorized posts.
 
-- Private message: a short welcome, exact public repo URL and an Arabic-guide claim only if that guide exists. Use the approved brand/heart. Example with a placeholder URL: `أهلًا بيك 💛 ده الرابط، وجوّه الدليل خطوة بخطوة: <repo URL>`.
-- Optional public reply: the user's approved wording, e.g. `بعتّلك الرابط والدليل في رسالة خاصة 💛`. Do not add follow-up marketing, unrelated links or personal information. If the current platform cannot support the intended delivery, do not promise an active automatic DM; prepare a manual fallback and explain the limitation privately before committing misleading copy.
-- Preserve existing approved message wording unless the request calls for a correction. Check the final URL character by character; a copied keyword must never deliver another project's link.
+## Reconcile workflows and four-cell coverage
 
-## Save, reopen and verify
+Inspect existing SuperMod workflows before creating one. Match by linked account, repo URL, keyword/aliases and trigger scope, not just the workflow name. Reuse correct workflows, reconcile missing triggers/channels and preserve unrelated workflows and settings. An uncertain save requires inspection before retrying.
 
-1. Reuse the existing correct campaign rule when possible; otherwise name a new rule clearly by project/keyword.
-2. Confirm requested channels independently. In some native UIs, **Messenger** is the Facebook delivery channel and **Instagram** has a separate switch. A checked Messenger switch does not prove Instagram is enabled. Use actual labels/current state rather than “the second checkbox”.
-3. Save changes and wait for the result through a state check. Reload/open the automation list and inspect the persisted rule's enabled status.
-4. Reopen the rule. Check exact keyword, trigger semantics/scope, correct repo link, public reply/private message, heart color and each channel switch. Record evidence privately. Cancel/close after read-only inspection without accidentally saving an unrelated change.
-5. Report saved configuration separately from end-to-end delivery. An active rule is not proof that a recipient received a message. Use a permitted native preview/test if available; a real comment or DM from/to an account needs the appropriate explicit authority. Do not mass-message followers or send unsolicited test messages.
+| Trigger | Facebook/Messenger | Instagram | Result |
+| --- | --- | --- | --- |
+| Comment keyword | Verify independently | Verify independently | Private opener plus a reply under the triggering comment, with ordered follow-up steps when permitted |
+| Incoming-message keyword | Verify independently | Verify independently | Welcome and repo-delivery sequence in the existing conversation |
 
-No suitable native template/channel? Keep prepared copy and report the exact limitation. Do not install a paid third-party service, change privacy/security settings or claim a nonexistent LinkedIn comment-to-DM feature. Keep LinkedIn reply templates ready for manual use unless a supported, authorized mechanism is actually verified.
+A shared workflow may cover all four cells, but each cell needs independent saved-state verification. A comment trigger, general AI assistant, Instant reply or Away message does not prove incoming-message keyword coverage. Keep one intentional keyword-to-repo mapping and inspect exact/contains semantics and post/account scope in the current instance.
+
+Inspect overlapping native Meta keyword rules read-only. When replacing a matching native rule, verify the saved SuperMod replacement and relevant delivery readiness first; use an authorized delivery test when available. Within authorized rule-maintenance scope, disable only the matching superseded rule before leaving duplicate responders active. If readiness or authority is unresolved, keep the new workflow paused and report the overlap. Never disable unrelated native rules, or any native rule merely because SuperMod is unavailable.
+
+## Arabic spelling aliases
+
+For every Arabic-keyword repo, review common spelling variants before saving either trigger. Keep the canonical phrase unchanged in artwork/captions; aliases expand accepted matching only. Do not assume normalization or a contains match makes hamza variants equivalent.
+
+- Include plausible hamza/no-hamza forms: initial أ or إ (and آ when natural) versus ا; for example `أداة جديدة` / `اداة جديدة`. Preserve meaning and do not mechanically replace every letter.
+- Review common informal spellings such as final ة/ه (`اداة جديده`) and unvocalized forms when relevant. Prefer actual misses and ordinary typing over speculative typos, broad fragments or synonyms.
+- Maintain one explicit accepted-keyword list per repo, deduplicate it and check collisions with other workflows. If no natural variant applies, record that review rather than inventing one.
+- Apply the same list to both trigger types on both channels. Preserve existing valid aliases, messages and links. Inspect actual SuperMod field limits; do not carry over an old native Meta keyword-count limit. Record useful uncovered aliases if a real limit prevents them.
+
+## Reply sequence and platform limits
+
+- Use the same short welcome, exact public repo URL and approved brand in both trigger paths. Mention an Arabic guide only if it exists. Preserve yellow hearts 💛 for this brand; the current user's explicit brand takes precedence.
+- Use the instance's supported Messenger/Instagram card or button templates when suitable, with a working text/link fallback. Preview each channel's actual output; do not assume template parity.
+- For a comment, use the triggering comment as the parent of the public acknowledgement; never create a separate top-level comment. Say a private message was sent only after confirmed opener acceptance. Respect the current private-reply limits and wait for recipient interaction before further messages when required. Incoming-message triggers need no public acknowledgement.
+- Preserve the approved ordered message/card/setup sequence. Respect current messaging windows, duplicate-event suppression, cooldowns and stop conditions. Do not enable the general AI inbox assistant or change model/key/budget settings for a repo launch.
+- Follow requirements are optional owner-selected workflow settings. Do not enable them by default. Where already authorized, verify an actual supported Instagram follow check; label Facebook self-confirmation accurately. Keep links after the gate and do not bypass it in public acknowledgements or fallback messages.
+
+## Save, reopen and report
+
+1. Configure/reconcile the repo workflow with both triggers, ready channels, full accepted-keyword list, scope, public child reply and approved private sequence. Save and reload the list, then reopen it.
+2. Verify enabled state, intended linked identities, both triggers, all aliases, channel coverage, correct repo URL/brand, template/button payloads, ordered steps, follow setting and current window/cooldown/repeat limits. A paused draft is not active coverage.
+3. Record per-cell status, provider `SuperMod`, private workflow reference, alias rationale, observed limits, native-rule overlap/migration outcome and verification time in the private ledger. Record skipped cells explicitly.
+4. Report **saved configuration verified** separately from **delivery tested**. A live test comment or DM needs explicit authority; inspect logs after an authorized test and do not claim delivery from a saved setting alone. Keep raw logs, recipients and screenshots private.
+
+LinkedIn replies remain manual unless a supported authorized mechanism is separately established. Missing SuperMod access is a reported automation skip, not permission to create another integration.

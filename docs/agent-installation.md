@@ -52,6 +52,8 @@ These locations/commands were checked against the linked official documentation 
 
 **Compatibility boundary:** instructions are portable; capabilities differ. A full social launch needs authorized social accounts and native scheduling/browser tools. GitHub read access establishes repo facts; existing final artwork can be reused, while new artwork needs image generation. This instruction-only skill adds neither account access nor a scheduler API. It contains no runtime Python helper. Agents without browser/scheduling tools can prepare copy and a plan only.
 
+Keyword automation separately requires an existing authorized SuperMod connection. It is optional, not bundled and not assumed open source or publicly available. If disconnected, skip automation and continue authorized post scheduling; do not create native keyword substitutes. Keep instance/account details private.
+
 ## 1. OpenAI Codex
 
 1. Use the personal destination: `~/.agents/skills/github-social-launch/`.

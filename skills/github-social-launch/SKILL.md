@@ -1,6 +1,6 @@
 ---
 name: github-social-launch
-description: "Prepare GitHub project announcements and complete an authorized social launch across a Facebook Page, Instagram, a LinkedIn profile and a LinkedIn Page. Reconcile native queues, schedule a finite daily series, and configure available Meta comment-to-message keyword rules with saved-state verification. Use for requests to schedule repo/skill launches or resume that campaign. Drafting or publishing a GitHub repo alone does not authorize social posting; this is not paid advertising or an indefinite content monitor."
+description: "Prepare GitHub project announcements and complete an authorized social launch across a Facebook Page, Instagram, a LinkedIn profile and a LinkedIn Page. Reconcile native queues, schedule a finite daily series, and use an already connected SuperMod instance for comment and incoming-message keyword rules on Facebook/Messenger and Instagram, skipping automation when disconnected. Use for requests to schedule repo/skill launches or resume that campaign. Drafting or publishing a GitHub repo alone does not authorize social posting; this is not paid advertising or an indefinite content monitor."
 ---
 
 # GitHub Social Launch
@@ -14,7 +14,7 @@ Turn verified public GitHub projects into an organized, finite social launch. Pr
 3. Resolve actual destinations as four distinct roles: Facebook Page, connected Instagram account, LinkedIn personal profile, LinkedIn organization Page. Include the roles authorized by the user's request/standing preferences, and verify the actual identities before mutating. A LinkedIn profile and Page are separate queues; selecting Facebook does not prove Instagram is included.
 4. Convert relative dates using the user's named timezone and current local date. For a request for this workflow without different times, propose/use the established cadence: one project per day per selected destination, Meta around 20:00 and LinkedIn around 10:30, in the user's timezone. An installed profile may supply a timezone; never silently copy the creator's timezone for a new user. Read [calendar and queue guidance](references/calendar-and-state.md).
 
-A direct scheduling request authorizes the specified campaign's posts and any explicitly requested comment-to-message rules; complete those routine steps without repeated approval. An instruction such as “always include Instagram and the LinkedIn Page” persists as destination preference for future requested campaigns, not indefinite posting. If external scheduling was not authorized, finish a concrete reviewable pack and request the missing approval before submission. Ask only for material unresolved accounts, dates or scope. Follow the host's mandatory confirmations if any apply.
+A direct scheduling request authorizes the specified campaign's posts. For every new repo, use connected SuperMod for both comment-to-message and incoming-message keyword replies on Facebook/Messenger and Instagram when the current request or saved standing authorization covers keyword delivery; complete those routine steps without repeated approval. A request to prepare copy alone does not enable live rules. An instruction such as “always include Instagram and the LinkedIn Page” persists as destination preference for future requested campaigns, not indefinite posting. If external scheduling was not authorized, finish a concrete reviewable pack and request the missing approval before submission. Ask only for material unresolved accounts, dates or scope. Follow the host's mandatory confirmations if any apply.
 
 ## Read the repositories and prepare the pack
 
@@ -26,7 +26,7 @@ Prepare the four-block Arabic pack (SHORT, FACEBOOK, LINKEDIN, REPLY) plus an In
 
 ## Reconcile before creating anything
 
-Use a sufficient authorized connector when available. If it cannot schedule organic posts or edit the required native rules, use the user's chosen logged-in browser with the supported computer-use tool. Ads-management access is not an organic scheduler; do not create ads, boosts, trials or new paid tools to complete this task.
+Use a sufficient authorized connector when available. If it cannot schedule organic posts or manage connected SuperMod workflows, use the user's chosen logged-in browser with the supported computer-use tool. Ads-management access is not an organic scheduler; do not create ads, boosts, trials or new paid tools to complete this task.
 
 Inspect the actual scheduled queues for all selected identities and the relevant date range, including unrelated existing posts. Match existing campaign posts using destination identity plus repo/content/keyword, image and local date/time; a title match or old ledger alone is insufficient. Reuse verified scheduled work and add only missing destinations. If a conflict exists, preserve the existing post and use the next appropriate free day within the authorized cadence; ask when that would exceed an explicitly bounded window or change a material requirement. Update private state after each item, so an interruption cannot cause an automatic duplicate retry.
 
@@ -41,11 +41,15 @@ Read [native scheduling guidance](references/native-scheduling.md). For each mis
 
 Inspect Facebook and Instagram individually even when a combined composer submitted both. Inspect the LinkedIn profile and Page queues separately; discover the current Page admin/frame/composer rather than relying on a remembered selector. Do not change unrelated posts or account settings.
 
-## Configure authorized Meta keyword delivery
+## Configure keyword delivery through connected SuperMod
 
-Read [comment-to-message guidance](references/meta-keyword-delivery.md). Only when included in the campaign authorization, inspect existing native automations and create/update the applicable comment-to-message rule for each exact keyword and repo link. Keep a comment trigger distinct from an incoming-message keyword rule or generic welcome reply.
+Read [SuperMod keyword-delivery guidance](references/meta-keyword-delivery.md). For every new repo in an authorized keyword campaign, use **SuperMod** for both comment and incoming-message keyword triggers on Facebook/Messenger and Instagram. Discover the user's existing authorized connection from private local configuration or available tools; verify the intended linked accounts and channel readiness before writing. SuperMod is optional and may be private: this skill neither bundles it nor assumes public source, a public service or installation access.
 
-Verify Messenger/Facebook and Instagram channel switches independently, rule scope, keyword match semantics shown by the UI, public reply and private message. Reopen the saved rule after reload and confirm both enabled channels, the exact keyword, correct URL and brand. Treat “active settings verified” separately from real message delivery. Do not send test comments/DMs from another account without authorization. LinkedIn replies remain manual unless a suitable supported automation and explicit authority actually exist.
+If no authorized SuperMod instance is connected, skip keyword automation, record all affected cells as **skipped — SuperMod not connected**, and continue the authorized post scheduling. For partial connections, configure only ready cells and report the rest. Do not create native Meta keyword rules as a fallback, provision SuperMod or publish its source. Keep manual reply copy available and make the delivery CTA truthful when automation is skipped; do not promise automatic delivery.
+
+Reuse matching SuperMod workflows; add only missing coverage. Keep one canonical public keyword and the same reviewed Arabic spelling aliases, welcome, repo URL and brand across both triggers and channels. Verify four cells per repo: Facebook comment, Instagram comment, Messenger incoming message and Instagram incoming message. Reload and reopen saved workflows; check enabled state, linked channels, aliases, scope, reply/link, ordered steps and current delivery limits. A comment trigger never proves incoming-message coverage. Reconcile overlapping native rules only after the SuperMod replacement is verified, as described in the reference.
+
+Report saved configuration separately from actual delivery. Do not send live test comments/DMs without authorization. LinkedIn replies remain manual unless a supported authorized mechanism is actually established.
 
 ## Finish or hand off with evidence
 

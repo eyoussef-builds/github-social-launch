@@ -4,7 +4,7 @@
 
 ## English
 
-Prepare a GitHub launch and complete the social scheduling you authorize: Facebook Page, connected Instagram, LinkedIn profile and LinkedIn Page. Read repo facts, prepare copy/artwork, preserve existing queues and verify saved posts plus requested native Meta keyword rules where available.
+Prepare a GitHub launch and complete the social scheduling you authorize: Facebook Page, connected Instagram, LinkedIn profile and LinkedIn Page. Read repo facts, prepare copy/artwork, preserve existing queues and verify saved posts plus requested SuperMod comment and incoming-message keyword workflows when already connected; otherwise skip automation and report it.
 
 Free MIT-licensed skill and step-by-step guides:
 https://github.com/eyoussef-builds/github-social-launch
@@ -13,7 +13,7 @@ Requires appropriate account permissions and scheduling/browser tools; image gen
 
 ## العربية
 
-جهّز إطلاق مشروع GitHub وجدولة السوشيال التي تسمح بها: صفحة فيسبوك، وإنستجرام، وبروفايل وصفحة لينكدإن. اقرأ الحقائق، وجهّز النصوص والتصاميم، وحافظ على الجدولة الموجودة، وتحقق من الحفظ وقواعد Meta المطلوبة عند توفرها.
+جهّز إطلاق مشروع GitHub وجدولة السوشيال التي تسمح بها: صفحة فيسبوك، وإنستجرام، وبروفايل وصفحة لينكدإن. اقرأ الحقائق، وجهّز النصوص والتصاميم، وحافظ على الجدولة الموجودة، وتحقق من الحفظ وقواعد كلمات التعليقات والرسائل عبر SuperMod المتصل؛ وعند غياب الاتصال يتخطى الأتمتة ويوضح ذلك.
 
 المهارة مجانية بترخيص MIT، ودليل التثبيت هنا:
 https://github.com/eyoussef-builds/github-social-launch
