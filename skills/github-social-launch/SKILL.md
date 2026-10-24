@@ -51,6 +51,10 @@ Reuse matching SuperMod workflows; add only missing coverage. Keep one canonical
 
 Report saved configuration separately from actual delivery. Do not send live test comments/DMs without authorization. LinkedIn replies remain manual unless a supported authorized mechanism is actually established.
 
+## Mandatory final review
+
+Before claiming completion or handing off, read and perform [the final campaign review](references/final-review.md). Reconcile the entire requested campaign against destination-specific saved evidence and the four SuperMod cells per repo, including explicit skips. Inspect the final copy, artwork and previews as the audience sees them. Correct authorized mismatches and recheck affected saved items; retain evidence privately and report real gaps. Individual success toasts or a filled ledger do not establish campaign completion.
+
 ## Finish or hand off with evidence
 
 Read [verification and privacy guidance](references/verification-and-privacy.md). Provide a clear table by project and destination with explicit dates/times/timezone and true status: prepared, draft, submitted/unconfirmed, scheduled verified, published verified, or unavailable. Report Meta rules separately, stating which saved settings were verified and whether delivery was actually tested. Do not call scheduled posts published or count one combined Meta submission as two verified posts without checking both queues.

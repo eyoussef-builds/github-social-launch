@@ -1,0 +1,11 @@
+# Mandatory final campaign review
+
+Use the existing [verification and privacy procedure](verification-and-privacy.md) for individual items, then reconcile the campaign as a whole before claiming completion or handing it off.
+
+- Compare the requested repositories, destination identities, local dates, cadence and timezone with the private campaign matrix. Every selected project/destination needs its own true status; a combined Meta submission does not prove two queue entries, and a LinkedIn profile does not cover its Page.
+- Review the final destination previews as a reader: useful opening, understandable benefit, readable and correctly cropped image, accurate license/requirements and consistent repo/keyword. Reconcile artwork, captions and reply URLs against the actual repository. Validate before submission; do not schedule an unsuitable draft just to fill the matrix.
+- For scheduled/published work, reopen the saved native queues/details and compare caption, attachment, account, date/time and timezone with the matrix. Use current item evidence rather than a toast or an old ledger. Preserve unrelated posts and investigate uncertain saves before retrying.
+- Reconcile SuperMod's four cells per repo with the current connection/readiness, exact keyword and aliases, correct link, enabled scope and ordered replies. Keep disconnected cells explicitly skipped and partial connections partial. Saved configuration and tested delivery are separate; never send an unauthorized test comment or DM to pass a review.
+- Inspect the final status table and handoff: does it accurately explain what is prepared, saved, scheduled, published, skipped or unavailable, with useful evidence and next actions? Keep actual account bindings, screenshots, admin URLs and filled ledgers private.
+
+Fix mismatches within the campaign's authorization, then recheck the affected saved objects. Update existing private state with review evidence and unresolved cells. If correcting an already-live post or rule would exceed the granted authority, retain the discrepancy and obtain only the missing decision. Do not label an incomplete campaign complete, buy a workaround or create a monitor as part of final review.
